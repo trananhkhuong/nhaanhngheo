@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="ghivaoanhdiem"> <input type="number" id="ghivaoemdianh">
+
+    </form>
+    <button onclick="cong ()">Addition(+)</button>
+    <button onclick="tru ()">Subtraction(-)</button>
+    <button onclick="nhan ()">Multiplication(*)</button>
+    <button onclick="chia ()">Division(/)</button>
+</body>
+<script>
+    function cong () {
+        let them1 = +document.getElementById("ghivaoanhdiem").value;
+        let them2 = +document.getElementById("ghivaoemdianh").value;
+        let cong = them1 + them2 ;
+        alert("ket qua: " + cong);
+    }function tru () {
+        let them1 = +document.getElementById("ghivaoanhdiem").value;
+        let them2 = +document.getElementById("ghivaoemdianh").value;
+        let tru = them1 - them2 ;
+        alert("ket qua: " + tru);
+    }function nhan () {
+        let them1 = +document.getElementById("ghivaoanhdiem").value;
+        let them2 = +document.getElementById("ghivaoemdianh").value;
+        let nhan = them1 * them2 ;
+        alert("ket qua: " + nhan);
+    }function chia () {
+        let them1 = +document.getElementById("ghivaoanhdiem").value;
+        let them2 = +document.getElementById("ghivaoemdianh").value;
+        let chia = them1 / them2 ;
+        alert("ket qua: " + chia);
+    }
+</script>
+</html>
